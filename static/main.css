@@ -1,34 +1,206 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: #f0f7f0;
+}
 
-.navbar{
-    width: 100%;
-    border: 1px solid red;
+/* navbar start */
+.navbar {
+    background-color: #2d5a3d;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-around;
-    height: 30px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 4rem; /* Fixed height for consistent spacing */
 }
 
-.navbar ul{
-    border: 1px solid green;
-    height: 100%;
-   
-
-
-}
-.navbar ul a{
-    padding: 0px 30px;
+/* Add padding to body equal to navbar height */
+body {
+    padding-top: 4rem;
 }
 
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-a{
+.navbar a {
+    color: #e0f0e9;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
+
+.navbar a:hover {
+    color: #a3d9b0;
+}
+
+/* searchStart */
+.searchbr {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.searchbr label {
+    color: #e0f0e9;
+}
+
+.searchbr input {
+    padding: 0.5rem;
+    border: 1px solid #a3d9b0;
+    border-radius: 4px;
+    background-color: #f0f7f0;
+    width: 200px;
+}
+/* navbar end */
+
+/* Adjust first section's margin */
+.homeSection:first-of-type {
+    margin-top: 0;
+}
+
+.homeSection {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #3e7252;
+    color: white;
+}
+
+.Heading {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.treeSection {
+    padding: 3rem 2rem;
+}
+
+.treeContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.treeContainer:hover {
+    transform: translateY(-5px);
+}
+
+.aboutTree {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #f5faf6;
+    border-radius: 8px;
+}
+
+.aboutTree h2 {
+    color: #2d5a3d;
+    margin-bottom: 1rem;
+}
+
+.aboutTree p {
+    color: #4a6655;
+    line-height: 1.6;
+}
+
+.treeImageContainer {
+    flex: 1;
+    max-width: 500px;
+}
+
+.treeImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.aboutSection {
+    background-color: #3e7252;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.aboutdiv {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.aboutdiv h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.aboutdiv p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contactSection {
+    background-color: #3e7252;
+    padding: 4rem 2rem;
+}
+
+.contactdiv {
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 0.8rem;
+    border: 2px solid #a3d9b0;
+    border-radius: 4px;
+    background-color: #f0f7f0;
+}
+
+.submitBtn {
+    background-color: #2d5a3d;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #1f4530;
+}
+/* Footer */
