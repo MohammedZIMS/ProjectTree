@@ -1,7 +1,7 @@
 # ProjectTree
 
 ### Create venv  
-python -m venv <venvName>
+python -m venv venvName
 
 ### Active venv
 venvName/Scripts/activate
