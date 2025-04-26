@@ -12,8 +12,8 @@
     <div class="navbar">
      
             <ul>
-                <a href="">Home</a>
-                <a href="">About</a>
+                <a href="#home">Home</a>
+                <a href="about">About</a>
                 <a href="">Contact Us</a>
             </ul>
 
@@ -23,12 +23,69 @@
             </div>
     
     </div>
-    <h1 class="Heading">Tree Information</h1>
+
+    <div class="homeSection section" id="home"> 
+        <h1 class="Heading">Tree Information</h1>
+    </div>
 
 
-    <div class="treebod"></div>
-    <div class="treebod"></div>
-    <div class="treebod"></div>
+    <section class="treeSection">
+        <div class="treeContainer">
+            <div class="contan aboutTree">
+                <h2>Tree Name</h2>
+                <p>Tree Description</p>
+            </div>
+            <div class="treeImageContainer left">
+                <img src="" alt="Tree Image" class="treeImage">
+            </div>
+        </div>
+        <div class="treeContainer">
+            <div class="contan aboutTree">
+                <h2>Tree Name</h2>
+                <p>Tree Description</p>
+            </div>
+            <div class="treeImageContainer left">
+                <img src="" alt="Tree Image" class="treeImage">
+            </div>
+        </div>
+        <div class="treeContainer">
+            <div class="contan aboutTree">
+                <h2>Tree Name</h2>
+                <p>Tree Description</p>
+            </div>
+            <div class="treeImageContainer left">
+                <img src="" alt="Tree Image" class="treeImage">
+            </div>
+        
+        </div>
+    </section>
+
+
+    <section class="section aboutSection">
+
+        <div class="aboutdiv about" id="about">
+            <h2>About Us</h2>
+            <p>We are a team of tree enthusiasts dedicated to providing information about various tree species.</p>
+            <p>Our mission is to educate and inspire people to appreciate the beauty and importance of trees in our environment.</p>
+        </div>
+
+    </section>
+
+    <section class="section contactSection">
+        <div class="contactdiv contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us!</p>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required> <br> <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 
 </body>
 </html>
