@@ -1,10 +1,10 @@
-### ProjectTree
+# ProjectTree
 
-# Create venv  
+### Create venv  
 python -m vene <veneName>
 
-# Active venv
+### Active venv
 veneName/Scripts/activate
 
-#Install Flask
+### Install Flask
 pip install flask
