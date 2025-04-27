@@ -1,95 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive tree information and conservation resources">
+    <link rel="icon" href="../static/images/TreeIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Project Tree</title>
 </head>
+
 <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <div class="searchbr">
-            <label for="searchInput">Search:</label>
-            <input type="search" id="searchInput" placeholder="Search about trees">
+        <div class="search-container">
+            <input type="search" id="searchInput" class="search-input" placeholder="Search about trees...">
         </div>
     </nav>
 
-    <section class="homeSection section" id="home">
-        <h1 class="Heading">Tree Information</h1>
-    </section>
+    <main>
+        <!-- Hero section start -->
+        <section class="hero-section" id="home">
+            <h1 class="main-heading">Discover Our Arboreal World</h1>
+            <p class="hero-text">Exploring Earth's diverse tree species and their ecosystems</p>
+        </section>
+        <!-- Hero section end -->
 
-    <section class="treeSection">
-        <div class="treeContainer">
-            <div class="contan aboutTree">
-                <h2>Tree Name</h2>
-                <p>Tree Description</p>
+        <!-- main content start -->
+        <section class="species-gallery">
+            <div class="species-card">
+                <div class="species-info">
+                    <h2 class="species-name">Visual Matches</h2>
+                    <p class="species-description">Colorful ornamental shrub with variegated foliage in vibrant green, yellow, red, and orange hues.</p>
+                    <span></span>
+                    <a href="#" class="info-link">more details →</a>
+                </div>
+                <div class="species-image">
+                    <img src="../static/images/VisualMatches.jpg" alt="Variegated ornamental shrub" class="responsive-image">
+                </div>
             </div>
-            <div class="treeImageContainer left">
-                <img src="" alt="Tree Image" class="treeImage">
-            </div>
-        </div>
-        <div class="treeContainer">
-            <div class="contan aboutTree">
-                <h2>Tree Name</h2>
-                <p>Tree Description</p>
-            </div>
-            <div class="treeImageContainer left">
-                <img src="" alt="Tree Image" class="treeImage">
-            </div>
-        </div>
-        <div class="treeContainer">
-            <div class="contan aboutTree">
-                <h2>Tree Name</h2>
-                <p>Tree Description</p>
-            </div>
-            <div class="treeImageContainer left">
-                <img src="" alt="Tree Image" class="treeImage">
-            </div>
-        
-        </div>
-    </section>
 
-    <section class="aboutSection section" id="about">
-        <div class="aboutdiv">
-            <h2>About Us</h2>
-            <p>We are a team of tree enthusiasts dedicated to providing information about various tree species.</p>
-            <p>Our mission is to educate and inspire people to appreciate the beauty and importance of trees in our environment.</p>
-        </div>
-    </section>
+            <div class="species-card">
+                <div class="species-info">
+                    <h2 class="species-name">Garden Croton</h2>
+                    <p class="species-description">Tropical evergreen known for its leathery, multicolored leaves and compact growth habit.</p>
+                    <span></span>
+                    <a href="#" class="info-link">more details →</a>
+                </div>
+                <div class="species-image">
+                    <img src="../static/images/GardenCroton.jpg" alt="Garden Croton plant" class="responsive-image">
+                </div>
+            </div>
 
-    <section class="contactSection section" id="contact">
-        <div class="contactdiv">
-            <h2>Contact Us</h2>
-            <form class="contactForm">
-                <div class="formGroup">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="species-card">
+                <div class="species-info">
+                    <h2 class="species-name">Bougainvillea</h2>
+                    <p class="species-description">Vibrant flowering vine featuring papery bracts in magenta, purple, and orange hues.</p>
+                    <br>
+                    <span>Bougainvillea is a tropical plant that adds stunning color to gardens and walls. It blooms throughout the year in warm climates and prefers full sun and well-drained soil. Though drought-tolerant, it thrives with regular watering and pruning to maintain shape and encourage flowering.</span>
+                    <a href="#" class="info-link">more details →</a>
                 </div>
-                <div class="formGroup">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="species-image">
+                    <img src="../static/images/Bougainvillea.jpg" alt="Bougainvillea blooms" class="responsive-image">
                 </div>
-                <div class="formGroup">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+        </section>
+        <!-- main content end -->
+
+        <!-- About section Start -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2 class="section-heading">About Us</h2>
+                <div class="mission-statement">
+                    <p>As dedicated arborists and conservationists, we commit to:</p>
+                    <ul class="mission-list">
+                        <li>Preserving global tree biodiversity</li>
+                        <li>Educating about sustainable forestry</li>
+                        <li>Promoting urban greening initiatives</li>
+                    </ul>
                 </div>
-                <button type="submit" class="submitBtn">Send Message</button>
-            </form>
+            </div>
+        </section>
+        <!-- About section end -->
+
+        <!-- Contact section start -->
+        <section class="contact-section" id="contact">
+            <div class="contact-wrapper">
+                <h2 class="section-heading">Connect With Our Team</h2>
+                <form class="contact-form" netlify>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name" class="input-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="input-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message" class="input-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Write your messags..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span class="button-text">Send Message</span>
+                        <span class="button-icon">🌳</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- Contact section end -->
+
+    </main>
+
+    <!-- Footer section start -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-heading">About Us</h3>
+                <p class="footer-text">Project Tree is dedicated to the conservation and study of tree species worldwide.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-heading">Connect</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
         </div>
-    </section>
-    
-    <!-- Footer Section Start -->
-    <footer class="footerSection" id="footer">
-        <div class="footerContent">
-            <h2>Follow Us</h2>
-            <p>Stay connected with us on social media for the latest updates and information.</p>
+        <hr>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Project Tree. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Footer Section end -->
+    <!-- Footer section end -->
 </body>
 </html>
