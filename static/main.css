@@ -3,9 +3,10 @@
     --secondary-green: #3e7252;
     --accent-green: #a3d9b0;
     --ligth-green: #4CAF50;
-    --light-bg: #f0f7f0;
+    --light-bg: #b4e2b4;
     --text-dark: #1a2f22;
     --text-light: #e0f0e9;
+
 }
 
 * {
@@ -101,7 +102,7 @@ body {
     gap: 3rem;
     margin: 3rem auto;
     max-width: 1300px;
-    background: linear-gradient(145deg, #ffffff 0%, #f8faf8 100%);
+    background: linear-gradient(145deg, #d5d8cf 0%, #b9cd97 100%);
     border-radius: 16px;
     padding: 2.5rem;
     box-shadow: 0 8px 30px rgba(32, 65, 46, 0.1);
@@ -172,18 +173,18 @@ body {
     text-decoration: none;
     font-weight: 600;
     padding: 0.8rem 1.5rem;
-    border: 2px solid var(--accent-green);
+    border: 1px solid var(--secondary-green);
     border-radius: 30px;
     transition: all 0.3s ease;
     width: max-content;
     margin-top: 1rem;
-    background: rgba(163, 217, 176, 0.1);
+    background: var(--light-bg);
 }
 
 .info-link:hover {
     background: var(--accent-green);
     color: var(--primary-green);
-    transform: translateX(8px);
+    transform: translateX(px);
 }
 
 .species-image {
@@ -197,11 +198,25 @@ body {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    object-position: center;
+    /* object-position: top; */
     border-radius: 12px;
-    transition: transform 0.4s ease;
+    transition: transform 0.6s ease-in-out;
 }
-
+.top{
+    object-position: top;
+    
+    }
+    .bottom{
+        object-position: bottom;
+        
+        }
+    .center{
+            object-position: center;
+    }
+            .responsive-image:hover  {
+                height: 100%;
+                transition: height 0.6s ease-in-out;
+            }
 /* About Section */
 .about-section {
     background: var(--secondary-green);
