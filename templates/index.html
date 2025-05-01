@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Comprehensive tree information and conservation resources">
     <link rel="icon" href="../static/images/TreeIcon.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="../static/main.css"> -->
-    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <link rel="stylesheet" href="../static/main.css">
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Project Tree</title>
 
@@ -38,19 +38,23 @@
 
         <!-- main content start -->
         <section class="species-gallery">
+            {% for i in range(3) %}
             <div class="species-card">
                 <div class="species-info">
-                    <h2 class="species-name">Tree Name</h2>
-                    <p class="species-description">Colorful ornamental shrub with variegated foliage in vibrant green, yellow, red, and orange hues.</p>
+                    <h2 class="species-name">{{ tName[i] }}</h2>
+                    <p class="species-description">{{ tDetail[i]}}</p>
+
                     <span></span>
                     <a href="./Tinfo.html#info1" class="info-link">more details →</a>
                 </div>
                 <div class="species-image">
-                    <img src="../static/images/VisualMatches.jpg" alt="Variegated ornamental shrub" class="responsive-image center">
-                </div>
-            </div>
+                    
+            <img src="{{ tImage[i] }}" alt="Image" class="responsive-image center">
+        </div>
+    </div>
+    {% endfor %}
 
-            <div class="species-card">
+            <!-- <div class="species-card">
                 <div class="species-info">
                     <h2 class="species-name">Garden Croton</h2>
                     <p class="species-description">Colorful ornamental shrub with variegated foliage in vibrant green, yellow, red, and orange hues.</p>
@@ -66,14 +70,13 @@
                 <div class="species-info">
                     <h2 class="species-name">Bougainvillea</h2>
                     <p class="species-description">Vibrant flowering vine featuring papery bracts in magenta, purple, and orange hues.</p>
-                    <br>
-                    <span>Bougainvillea is a tropical plant that adds stunning color to gardens and walls. It blooms throughout the year in warm climates and prefers full sun and well-drained soil. Though drought-tolerant, it thrives with regular watering and pruning to maintain shape and encourage flowering.</span>
+                    
                     <a href="./Tinfo.html#info3"  class="info-link">more details →</a>
                 </div>
                 <div class="species-image">
                     <img src="../static/images/Bougainvillea.jpg" alt="Bougainvillea blooms" class="responsive-image top">
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- main content end -->
 
