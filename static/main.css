@@ -103,7 +103,8 @@ body {
     margin: 3rem auto;
     max-width: 1300px;
     background: linear-gradient(145deg, #d5d8cf 0%, #b9cd97 100%);
-    border-radius: 16px;
+    border-radius: 5px;
+
     padding: 2.5rem;
     box-shadow: 0 8px 30px rgba(32, 65, 46, 0.1);
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
@@ -310,6 +311,7 @@ body {
 }
 
 .footer-container {
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;

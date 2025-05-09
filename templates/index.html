@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
 
+<<<<<<< Updated upstream
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +25,10 @@
             <input type="search" id="searchInput" class="search-input" placeholder="Search about trees...">
         </div>
     </nav>
+=======
+{% extends 'base.html' %}
+{% block content %}
+>>>>>>> Stashed changes
 
     <main>
         <!-- Hero section start -->
@@ -80,6 +83,7 @@
         </section>
         <!-- main content end -->
 
+        
         <!-- About section Start -->
         <section class="about-section" id="about">
             <div class="about-content">
@@ -126,42 +130,4 @@
 
     </main>
 
-    <!-- Footer section start -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3 class="footer-heading">About Us</h3>
-                <p class="footer-text">Project Tree is dedicated to the conservation and study of tree species worldwide.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h3 class="footer-heading">Connect</h3>
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h3 class="footer-heading">Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" class="newsletter-input">
-                    <button type="submit" class="newsletter-button">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="footer-bottom">
-            <p class="copyright">&copy; 2025 Project Tree. All rights reserved.</p>
-        </div>
-    </footer>
-    <!-- Footer section end -->
-</body>
-</html>
+ {% endblock %}

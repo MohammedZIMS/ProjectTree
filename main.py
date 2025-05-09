@@ -56,4 +56,17 @@ def search(aage):
     return render_template("test.html", name=name, batch=batch, age=age, ln=len(name), aage=aage, result=result)
 
 
+
+@app.route("/trees/info/<nam>")
+
+treeinfo = {
+    "" 
+}
+
+def infos(nam):
+    return render_template("Tinfo.html")
+
+
+
+
 app.run(debug=True)
