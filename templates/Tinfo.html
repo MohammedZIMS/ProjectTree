@@ -3,27 +3,20 @@
 
 
     {% block cssblock %}
-    <link rel="stylesheet" href="../static/Tinfo.css">
-<<<<<<< Updated upstream
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>More Details</title>
-</head>
-=======
+    <link rel="stylesheet" href="/static/Tinfo.css">
     {% endblock %}
->>>>>>> Stashed changes
 
 {% block content %}
 
  
         <section class="info_divs">
-            <div id="info1" >
+            <div id="info1" style="background-image: url('{{ tree_image }}'); background-size: cover;background-repeat: no-repeat;">	
                 <div class="moreTxt">
-                    <h1>Patabahar</h1>
-                    <h2>Bloody phoool</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti molestias doloremque impedit nam, nobis asperiores maxime mollitia et distinctio! In laudantium quod rerum corrupti, libero assumenda recusandae, velit adipisci excepturi odit quo quaerat fugiat. Soluta, laboriosam consectetur maxime veritatis dolor laudantium vitae similique ipsum architecto beatae nemo voluptatum rerum!</p>
+                    <h1>{{tree_name}}</h1>
+                    <h2>{{tree_detail}}</h2>
+                    <p> adipisicing elit. Ut deleniti molestias doloremque impedit nam, nobis asperiores maxime mollitia et distinctio! In laudantium quod rerum corrupti, libero assumenda recusandae, velit adipisci excepturi odit quo quaerat fugiat. Soluta, laboriosam consectetur maxime veritatis dolor laudantium vitae similique ipsum architecto beatae nemo voluptatum rerum!</p>
                 </div>
-                <div class="images">
-                </div>
+                <div class="images" style=" background-image:  url('{{ tree_image }}');"></div>
             </div>
         </section> 
 

@@ -1,17 +1,22 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-tree_names = ["Tree Name", "Garden Croton", "Bougainvillea"]
+tree_names = ["patabahar", "GardenCroton", "Bougainvillea","LobuTree"]
 tree_details = [
+    "Bloody Phool.",
     "Colorful ornamental shrub with variegated foliage in vibrant green, yellow, red, and orange hues.",
-    "Colorful ornamental shrub with variegated foliage in vibrant green, yellow, red, and orange hues.",
-    "Vibrant flowering vine featuring papery bracts in magenta, purple, and orange hues."
+    "Vibrant flowering vine featuring papery bracts in magenta, purple, and orange hues.",
+    "A tree with a unique shape and a wide canopy, often used for shade.onk beshi lombba"
 ]
 tree_images = [
-    "../static/images/VisualMatches.jpg",
-    "../static/images/GardenCroton.jpg",
-    "../static/images/Bougainvillea.jpg"
+    "/static/images/VisualMatches.jpg",
+    "/static/images/GardenCroton.jpg",
+    "/static/images/Bougainvillea.jpg",
+    "/static/images/lombutree.jpg"
 ]
+
+
+
 @app.route("/")
 def home():
     return render_template("index.html",tName=tree_names,tDetail=tree_details,tImage=tree_images)
@@ -20,11 +25,6 @@ def home():
 @app.route("/Tinfo.html")
 def tinfo():
     return render_template("Tinfo.html")
-
-
-
-
-
 
 
 
@@ -59,12 +59,16 @@ def search(aage):
 
 @app.route("/trees/info/<nam>")
 
-treeinfo = {
-    "" 
-}
-
 def infos(nam):
-    return render_template("Tinfo.html")
+    
+    for i in range(len(tree_names)):
+        if tree_names[i] == nam:
+            result = {"name": tree_names[i], "details": tree_details[i], "image": tree_images[i]}
+            break
+    
+    
+    return render_template("Tinfo.html",tree_name=result["name"],tree_detail=result["details"],tree_image=result["image"])
+
 
 
 

@@ -1,34 +1,7 @@
 
-<<<<<<< Updated upstream
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comprehensive tree information and conservation resources">
-    <link rel="icon" href="../static/images/TreeIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../static/main.css">
-    <!-- <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Project Tree</title>
-
-    
-
-</head>
-
-<body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="search-container">
-            <input type="search" id="searchInput" class="search-input" placeholder="Search about trees...">
-        </div>
-    </nav>
-=======
 {% extends 'base.html' %}
 {% block content %}
->>>>>>> Stashed changes
+
 
     <main>
         <!-- Hero section start -->
@@ -41,14 +14,14 @@
 
         <!-- main content start -->
         <section class="species-gallery">
-            {% for i in range(3) %}
+            {% for i in range(4) %}
             <div class="species-card">
                 <div class="species-info">
                     <h2 class="species-name">{{ tName[i] }}</h2>
                     <p class="species-description">{{ tDetail[i]}}</p>
 
                     <span></span>
-                    <a href="./Tinfo.html#info1" class="info-link">more details →</a>
+                    <a href="/trees/info/{{ tName[i] }}" class="info-link">more details →</a>
                 </div>
                 <div class="species-image">
                     
